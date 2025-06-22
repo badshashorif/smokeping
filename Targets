@@ -1,0 +1,515 @@
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = Network Latency Grapher
+remark = Welcome to the SmokePing website of Dot Internet. \
+         Here you will learn all about the latency of our network.
+
++ Local
+
+menu = Local
+title = Local Network
+#parents = owner:/Test/James location:/
+
+++ LocalMachine
+
+menu = Local Machine
+title = This host
+host = localhost
+#alerts = someloss
+
+#============================================
++ INTERNET_SITES
+menu = INTERNET SITES
+title = INTERNET SITES SERVER
+
+++ FACEBOOK
+menu = FACEBOOK
+title = FACEBOOK SERVERS
+
++++ FACEBOOK_SERVER1
+probe = FPing
+host = 157.240.1.35
+title = FACEBOOK1 157.240.1.35
+
++++ FACEBOOK_SERVER2
+probe = FPing
+host = 31.13.64.35
+title = FACEBOOK2 31.13.64.35
+
+#----------------------------
+++ GOOGLE
+menu = GOOGLE
+title = GOOGLE SERVERS
+
++++ GOOGLE_WEB
+probe = FPing
+host = www.google.com
+title = ww.google.com
+alerts = google_rttdetect,hostdown
+
++++ GMAIL
+probe = FPing
+host = www.gmail.com
+title = www.gmail.com
+alerts = google_rttdetect,hostdown
+
++++ YOUTUBE
+probe = FPing
+host = www.youtube.com
+title = www.youtube.com
+alerts = google_rttdetect,hostdown
+
+#========================================================
++ GAME_SERVERS
+menu = GAME SERVERS
+title = Gaming Servers Destinations
+
+#________________________________________________________
+++ MOBILE_LEGEND
+menu = MOBILE LEGEND
+title = MOBILE LEGEND SERVERS
+
++++ MOBILE_LEGEND_SERVER1
+probe = FPing
+host = 59.153.158.251
+title = MOBILE_LEGEND_BD 59.153.158.251
+
+#---------------------------------------------------------
+++ DISCORD
+menu = DISCORD
+title = DISCORD SERVERS
+
++++ DISCORD_SG
+probe = FPing
+host = 66.22.221.163
+title = DISCORD_SG 66.22.221.163
+
++++ DISCORD_US
+probe = FPing
+host = 162.159.135.234
+title = DISCORD_US 162.159.135.234
+
+#----------------------------------------------------------
+++ AMAZON 
+menu = AMAZON EC2 INDIA
+title = AMAZON MUMBAI SERVERS
+
++++ MUMBAI_3_6_0_0
+probe = FPing
+host = 3.6.0.0
+title = MUMBAI 3.6.0.0
+
++++ MUMBAI_3_108_0_0
+probe = FPing
+host = 3.108.0.0
+title = MUMBAI 3.108.0.0
+
++++ MUMBAI_13_126_0_252
+probe = FPing
+host = 13.126.0.252
+title = MUMBAI 13.126.0.252
+
++++ MUMBAI_15_206_0_0
+probe = FPing
+host = 15.206.0.0
+title = MUMBAI 15.206.0.0
+
++++ MUMBAI_52_66_66_2
+probe = FPing
+host = 52.66.66.2
+title = MUMBAI 52.66.66.2
+
++++ MUMBAI_65_0_0_0
+probe = FPing
+host = 65.0.0.0
+title = MUMBAI 65.0.0.0
+
+#-------------------------------------------------------
+++ VALORANT 
+menu = VALORANT 
+title = VALORANT SERVERS
+
++++ VALORANT_SERVER1
+probe = FPing
+host = 75.2.69.178
+title = 75.2.69.178.SG
+
++++ VALORANT_SERVER2
+probe = FPing
+host = 43.229.65.0
+title = 43.229.65.0.SG
+
++++ VALORANT_SERVER3
+probe = FPing
+host = 76.223.1.250
+title = 76.223.1.250.SG
+
++++ VALORANT_SERVER4
+probe = FPing
+host = 13.248.193.101
+title = 13.248.193.101.SG
+
++++ VALORANT_SERVER5
+probe = FPing
+host = 99.83.157.116
+title = 99.83.157.116.SG
+
++++ VALORANT_SERVER6
+probe = FPing
+host = 151.106.248.0
+title = 151.106.248.0.SG
+
++++ VALORANT_SERVER7
+probe = FPing
+host = 99.83.136.104
+title = 99.83.136.104.IN.MUMBAI
+
++++ VALORANT_SERVER8
+probe = FPing
+host = 75.2.66.166
+title = 75.2.66.166.IN.MUMBAI
+
++++ VALORANT_SERVER9
+probe = FPing
+host = 13.248.197.71
+title = 13.248.197.71.IN.MUMBAI
+
++++ VALORANT_SERVER10
+probe = FPing
+host = 151.106.246.0
+title = 151.106.246.0.IN.MUMBAI
+
+#__________________________________
+++ BATTLEFIELD
+menu = BATTLEFIELD
+title = BATTLEFIELD SERVERS
+
++++ BATTLEFIELD_SERVER1
+probe = FPing
+host = 109.200.221.169
+title = 109.200.221.169
+
++++ BATTLEFIELD_SERVER2
+probe = FPing
+host = 94.250.199.136
+title = 94.250.199.136
+
+#-------------------------------------
+++ FIFA 
+menu = FIFA
+title = FIFA SERVERS
+
++++ FIFA_SERVER1
+probe = FPing
+host = 3.6.216.33
+title = 3.6.216.33.IN
+
++++ FIFA_SERVER2
+probe = FPing
+host = 129.227.71.138
+title = 129.227.71.138
+
+#-----------------------------------
+++ APEX_LEGEND 
+menu = APEX LEGEND
+title = APEX LEGEND SERVERS
+
++++ APEX_LEGEND_SERVER1
+probe = FPing
+host = 129.227.70.94
+title = 129.227.70.94.PS4
+
++++ APEX_LEGEND_SERVER2
+probe = FPing
+host = 35.185.189.243
+title = 35.185.189.243.SG
+
++++ APEX_LEGEND_SERVER3
+probe = FPing
+host = 72.5.161.228
+title = 72.5.161.228.SG
+
++++ APEX_LEGEND_SERVER4
+probe = FPing
+host = 72.5.161.91
+title = 72.5.161.91.SG
+
++++ APEX_LEGEND_SERVER5
+probe = FPing
+host = 129.227.67.202
+title = 129.227.67.202.SG
+
++++ APEX_LEGEND_SERVER6
+probe = FPing
+host = 35.185.189.104
+title = 35.185.189.104
+
++++ APEX_LEGEND_SERVER7
+probe = FPing
+host = 107.6.122.47
+title = 107.6.122.47
+
++++ APEX_LEGEND_SERVER8
+probe = FPing
+host = 129.227.64.42
+title = 129.227.64.42
+
++++ APEX_LEGEND_SERVER9
+probe = FPing
+host = 103.23.210.220
+title = 103.23.210.220.SG
+
++++ APEX_LEGEND_SERVER10
+probe = FPing
+host = 103.102.163.118
+title = 103.102.163.118.SG
+
++++ APEX_LEGEND_SERVER11
+probe = FPing
+host = 129.227.70.6
+title = 129.227.70.6.GCE2
+
+#-------------------------------------
+++ NEW_WORLD 
+menu = NEW WORLD
+title = NEW WORLD SERVERS
+
++++ NEW_WORLD_SERVER1
+probe = FPing
+host = 3.25.55.173
+title = 3.25.55.173.AUS
+
++++ NEW_WORLD_SERVER2
+probe = FPing
+host = 3.25.94.129
+title = 3.25.94.129
+
+#----------------------------------------
+++ RAINBOW_SIX
+menu = RAINBOW SIX
+title = RAINBOW SIX SERVERS
+
++++ RAINBOW_SIX_SERVER1
+probe = FPing
+host = 52.94.11.142
+title = 52.94.11.142.SG
+
++++ RAINBOW_SIX_SERVER2
+probe = FPing
+host = 52.119.187.3
+title = 52.119.187.3.SG
+
++++ RAINBOW_SIX_SERVER3
+probe = FPing
+host = 52.237.79.22
+title = 52.237.79.22.SG
+
+#--------------------------------------------
+++ COUNTER_STRIKE_2
+menu = COUNTER STRIKE 2
+title = COUNTER STRIKE 2 SERVERS
+
++++ COUNTER_STRIKE_2_SERVER1
+probe = FPing
+host = 103.14.247.206
+title = 103.14.247.206
+ 
+#---------------------------------
+++ PUBG
+menu = PUBG
+title = PUBG SERVERS
+
++++ PUBG_SERVER1
+probe = FPing
+host = 119.28.114.29
+title = 119.28.114.29.SG
+
++++ PUBG_SERVER2
+probe = FPing
+host = 119.28.111.234
+title = 119.28.111.234.SG
+
++++ PUBG_SERVER3
+probe = FPing
+host = 124.156.204.3
+title = 124.156.204.3.SG
+
++++ PUBG_SERVER4
+probe = FPing
+host = 150.109.12.23
+title = 150.109.12.23.SG
+
++++ PUBG_SERVER5
+probe = FPing
+host = 129.226.1.245
+title = 129.226.1.245.SG
+
++++ PUBG_SERVER6
+probe = FPing
+host = 52.94.20.142
+title = 52.94.20.142.IN
+
++++ PUBG_SERVER7
+probe = FPing
+host = 45.40.221.123
+title = 45.40.221.123.TW
+
+#+++ PUBG_SERVER8
+#probe = FPing
+#host = 101.32.129.131
+#title = 101.32.129.131
+
+#+++ PUBG_SERVER9
+#probe = FPing
+#host = 101.33.107.94
+#title = 101.33.107.94
+
+#--------------------------------
+++ ROE
+menu = ROE
+title = ROE SERVERS
+
++++ ROE_SERVER1
+probe = FPing
+host = 150.109.116.143
+title = 150.109.116.143.HK
+
++++ ROE_SERVER2
+probe = FPing
+host = 119.28.208.16
+title = 119.28.208.16.HK
+
++++ ROE_SERVER3
+probe = FPing
+host = 119.28.223.107
+title = 119.28.223.107.HK
+
+#-----------------------------------
+++ COD
+menu = COD
+title = COD SERVERS
+
++++ COD_SERVER1
+probe = FPing
+host = 139.180.151.193
+title = 139.180.151.193.SG
+
++++ COD_SERVER2
+probe = FPing
+host = 139.180.151.129
+title = 139.180.151.129.SG
+
+#--------------------------------------
+++ WARZONE
+menu = WARZONE
+title = WARZONE SERVERS
+
++++ WARZONE_SERVER1
+probe = FPing
+host = 139.180.151.193
+title = 139.180.151.193
+
++++ WARZONE_SERVER2
+probe = FPing
+host = 139.180.151.129
+title = 139.180.151.129
+
+#------------------------------------
+++ FORTINITE
+menu = FORTINITE
+title = FORTINITE SERVERS
+
++++ FORTINITE_SERVER1
+probe = FPing
+host = 15.184.0.253
+title = 15.184.0.253
+
++++ FORTINITE_SERVER2
+probe = FPing
+host = 157.175.10.11
+title = 15.184.17.52
+
+#---------------------------------
+++ WOW
+menu = WOW
+title = WOW SERVERS
+
++++ WOW_SERVER1
+probe = FPing
+host = 185.100.87.113
+title = 185.100.87.113
+
++++ WOW_SERVER2
+probe = FPing
+host = 185.60.112.157
+title = 185.60.112.157
+
+#----------------------------------
+++ GENSHIN_IMPACT
+menu = GENSHIN IMPACT
+title = GENSHIN IMPACT SERVERS
+
++++ GENSHIN_IMPACT_SERVER1
+probe = FPing
+host = 47.91.24.239
+title = 47.91.24.239
+
+#---------------------------------
+++ FREE-FIRE
+menu = FREE FIRE
+title = FREE FIRE SERVERS
+
++++ FREE-FIRE_SERVER1
+probe = FPing
+host = 164.52.122.194
+title = 164.52.122.194
+
+#----------------------------------
++ DNS
+menu = DNS
+title = DNS SERVER
+
+++ PDNS
+probe = FPing
+host = 172.16.172.10
+title = PDNS 172.16.172.10
+
+++ SDNS
+probe = FPing
+host = 172.16.172.14
+title = SDNS 172.16.172.14
+
+++ GOOGLE_DNS1
+probe = FPing
+host = 8.8.8.8
+title = GOOGLE DNS1 8.8.8.8
+
+++ GOOGLE_DNS2
+probe = FPing
+host = 8.8.4.4
+title = GOOGLE DNS2 8.8.4.4
+
+++ CLOUDFLARE_DNS1
+probe = FPing
+host = 1.1.1.1
+title = CLOUDFLARE DNS1 1.1.1.1
+
+++ CLOUDFLARE_DNS2
+probe = FPing
+host = 1.0.0.1
+title = CLOUDFLARE DNS2 1.0.0.1
+
+++ LEVEL3_DNS1
+probe = FPing
+host = 4.2.2.1
+title = LEVEL3 DNS1 4.2.2.1
+
+++ QUAD9
+probe = FPing
+host = 9.9.9.9
+title = QUAD9 9.9.9.9
+
+#-----------------------------
