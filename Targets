@@ -39,6 +39,16 @@ probe = FPing
 host = 31.13.64.35
 title = FACEBOOK2 31.13.64.35
 
++++ WhatsApp
+probe = FPing
+host = 57.144.143.48
+title = WhatsApp 37.111.194.148
+
++++ WhatsApp_Call
+probe = FPing
+host = 57.144.143.48
+title = WhatsApp 57.144.143.48
+
 #----------------------------
 ++ GOOGLE
 menu = GOOGLE
